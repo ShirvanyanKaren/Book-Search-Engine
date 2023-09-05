@@ -44,10 +44,10 @@ const SearchBooks = () => {
     }
 
     try {
-
+      const apiKey = 'AIzaSyDvtLlbEquG11LavQNMG06JUVsLjsAxfEA'
       const response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchInput}`
-      );
+       ` https://www.googleapis.com/books/v1/volumes?q=${searchInput}&key=${apiKey}`);
+      console.log(response)
 
       if (!response.ok) {
         throw new Error("something went wrong!");
