@@ -1,5 +1,4 @@
 # Book-Search-Engine
-# My-React-Portfolio
 
 ## Technology used
 | Technology Used and Deployed App       | Resource URL           | 
