@@ -3,8 +3,6 @@ const { signToken } = require('../utils/auth');
 const { AuthenticationError } = require('apollo-server-express');
 
 
-
-
 const resolvers = {
     Query: {
         users : async (parent, { username }) => {

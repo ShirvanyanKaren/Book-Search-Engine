@@ -3,6 +3,7 @@ type User {
     _id: ID
     username: String
     email: String
+    password: String
     bookCount: Int
     savedBooks: [Book]
     }
@@ -15,8 +16,6 @@ type Book {
     link: String
 
 }
-    
-
 
 input inputBook {
     bookId: ID!
@@ -26,12 +25,10 @@ input inputBook {
     image: String
     link: String
 }
-    
 type Auth {
     token: ID!
     user: User
 }      
-    
 type Query {
     users: [User]
     user(username: String!): User
@@ -48,3 +45,4 @@ type Mutation {
 }
         
  `;
+module.exports = typeDefs;
