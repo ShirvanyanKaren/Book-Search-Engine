@@ -11,9 +11,7 @@ import {
 // added mutatuion and specified mutation save book from mutations file
 import { useMutation } from '@apollo/client';
 import { ADD_BOOK } from '../utils/mutations';
-
 import Auth from '../utils/auth';
-// import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
 
@@ -46,21 +44,23 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`)
 
-      if (!response.ok) {   
-        throw new Error('something went wrong!');
+      const response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes?q=${searchInput}`
+      );
+
+      if (!response.ok) {
+        throw new Error("something went wrong!");
       }
-  
 
       const { items } = await response.json();
 
       const bookData = items.map((book) => ({
         bookId: book.id,
-        authors: book.volumeInfo.authors || ['No author to display'],
+        authors: book.volumeInfo.authors || ["No author to display"],
         title: book.volumeInfo.title,
         description: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks?.thumbnail || '',
+        image: book.volumeInfo.imageLinks?.thumbnail || "",
       }));
 
       setSearchedBooks(bookData);
