@@ -3,7 +3,7 @@
 ## Technology used
 | Technology Used and Deployed App       | Resource URL           | 
 | ------------- |:-------------:| 
-| Deployed Application | [https://shirvanyan-book-search-engine-d9644b7d6c49.herokuapp.com/ ](https://shirvanyan-book-search-engine-d9644b7d6c49.herokuapp.com/ ) |
+| Deployed Application | [https://shirvanyan-book-search-1effe4dc29af.herokuapp.com/ ](https://shirvanyan-book-search-1effe4dc29af.herokuapp.com/ ) |
 | My Repository | [https://github.com/ShirvanyanKaren/Book-Search-Engine](https://github.com/ShirvanyanKaren/Book-Search-Engine) |
 | Vite | [https://vitejs.dev/](https://vitejs.dev/) |
 | React | [https://developer.chrome.com/docs/workbox/#injectmanifest_plugin](https://developer.chrome.com/docs/workbox/#injectmanifest_plugin) |
