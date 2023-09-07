@@ -20,6 +20,7 @@
     "concurrently": "^8.2.0"
   },
   "dependencies": {
-    "mongodb": "^6.0.0"
+    "mongodb": "^6.0.0",
+    "react-bootstrap-sidebar-menu": "^2.0.3"
   }
 }
